@@ -1,0 +1,329 @@
+/*Reset 시작*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+body {
+    background-color: #fff;
+}
+a                     { text-decoration: none; }
+a:link               { color: #333; }
+a:visited           { color: #333; }
+a:active            { color: #222; }
+a:hover            { color: #222; }
+ul                    { list-style: none; }
+img                 { vertical-align: middle; }
+/*Reset 끝*/
+
+/*가이드 라인*/
+/*header#header             {border: 3px solid #08f;}*/
+/*div#headerArea            {border: 1px solid #000;}*/
+/*div#headerLogo            {border: 1px solid #000;}*/
+/*nav#gnb                      {border: 1px solid #000;}*/
+
+/*div#wrap                     {border: 1px solid #000;}*/
+/*main#main                  {border: 1px solid #000;}*/
+/*div#slide                     {border: 1px solid #000;}*/
+/*div#ShuttleFrame         {border: 3px solid #fb0;}*/
+
+/*aside#aside                 {border: 1px solid #000;}*/
+/*div#notice                   {border: 1px solid #000;}*/
+/*div#gallery                  {border: 1px solid #000;}*/
+/*div#shortCut               {border: 1px solid #000;}*/
+
+/*footer#footer               {border: 1px solid #000;}*/
+/*div#footerArea             {border: 1px solid #000;}*/
+/*div#copy                     {border: 1px solid #000;}*/
+/*div#footerMenu            {border: 1px solid #000;}*/
+/*div#sns                       {border: 1px solid #000;}*/
+/*div#familySite             {border: 1px solid #000;}*/
+/*가이드 라인*/
+
+
+
+
+/*header#header*/
+header#header {
+    width: 100%;
+    height: 100px;
+
+    background-color: rgba(201, 236, 255, 0.6);
+}
+div#headerArea {
+    width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+div#headerLogo {
+    line-height: 100px;
+}
+
+    /*nav#gnb*/
+nav#gnb {
+    margin-top: 50px;
+    margin-right: 15px;
+}
+nav#gnb>ul#mainMenu>li {
+    float: left;
+}
+nav#gnb>ul#mainMenu>li>a {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+
+    background-color: #7fc9ff;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    display: inline-block;
+
+    position: relative;
+}
+nav#gnb>ul#mainMenu>li>a:hover {
+        background-color: #a8ddff;
+}
+
+    /*ul.subMenu*/
+nav#gnb ul.subMenu {
+    display: none;
+}
+nav#gnb ul.subMenu>li>a {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+
+    background-color: rgba(204, 235, 255, 0.61);
+    color: #444;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    display: inline-block;
+
+    position: relative;
+    z-index: 3;
+}
+nav#gnb ul.subMenu>li>a:hover {
+    background-color: rgba(232, 246, 255, 0.61);
+}
+
+
+div#gnbBG {
+    position: relative;
+    position: 2;
+}
+div#gnbArea {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(234, 240, 255, 0.6);
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+    /*ul.subMenu*/
+    /*nav#gnb*/
+/*header#header*/
+
+
+/*div#wrap*/
+div#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+    /*main#main*/
+main#main {
+    height: 300px;
+}
+
+    /*슬라이드 쇼*/
+#main #slide {
+    width: 1200px;
+    height: 300px;
+
+    overflow: hidden;
+}
+#main #slide #ShuttleFrame {
+    height: 1100px;
+}
+#main #slide #ShuttleFrame a {
+    position: relative;
+}
+#main #slide #ShuttleFrame a>span {
+    width: 450px;
+    padding: 18px 30px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: inline-block;
+}
+    /*슬라이드 쇼*/
+    /*main#main*/
+
+
+    /*aside#aside*/
+aside#aside {
+    height: 200px;
+    display: flex;
+}
+#aside button {
+    padding: 2px 8px;
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+
+    position: relative;
+    top: 1px;
+}
+    /*div#notice*/
+#aside #notice {
+    width: 430px;
+}
+#noticeTxt {
+    margin: 0 5px;
+    padding: 12px 8px;
+    border: 1px solid #ccc;
+}
+#noticeTxt li {
+    line-height: 26px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+    /*div#notice*/
+
+    /*div#gallery*/
+div#gallery {
+    width: 420px;
+}
+div#gallery>#galleryImg {
+    padding: 5px 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+    /*div#gallery*/
+
+    /*div#shortCut*/
+div#shortCut {
+    width: 350px;
+    line-height: 200px;
+    text-align: center;
+    overflow: hidden;
+}
+    /*div#shortCut*/
+    /*aside#aside*/
+/*div#wrap*/
+
+/*footer#footer*/
+footer#footer {
+    width: 100%;
+    height: 100px;
+
+    background-color: rgba(201, 236, 255, 0.6);
+}
+#footerArea {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+#footerArea #copy {
+    width: 1000px;
+    line-height: 100px;
+
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+
+/*    border: 1px solid #000;*/
+}
+#footerArea #footerMenu {
+    width: 200px;
+
+/*    border: 1px solid #000;*/
+}
+#footerArea #footerMenu #sns {
+    display: flex;
+    justify-content: space-around;
+}
+#footerArea #footerMenu a {
+    display: inline-block;
+}
+#footerArea #footerMenu #familySite {
+    line-height: 40px;
+    text-align: center;
+}
+#footerArea #footerMenu #familySite select {
+    font-size: 17px;
+    outline: none;
+}
+/*footer#footer*/
+
+
+
+
+/* 모달레이어 */
+div#modalBG {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: none;
+}
+#modalTxt {
+    max-width: 700px;
+    min-width: 500px;
+    max-height: 350px;
+    padding: 15px 22px;
+    background-color: #fff;
+    border-radius: 5PX;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#modalTxt p {
+    padding-bottom: 3px;
+    line-height: 25px;
+}
+#modalTxt p:nth-child(2) {
+    padding: 15px 0;
+    font-weight: bold;
+    display: inline-block;
+}
+#modalTxt>button {
+    padding: 5px 8px;
+    margin-left: 88%;
+    border: none;
+    font-size: 17px;
+    outline: none;
+
+    cursor: pointer;
+}
+/* 모달레이어 */
+
+
+
+
+
